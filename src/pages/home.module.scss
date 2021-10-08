@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 65%;
   margin: auto;
 
   h1 {
@@ -41,16 +41,24 @@
   }
   a {
     display: block;
+    transition: color 0.2s;
 
     & + a {
       margin-top: 2rem;
       padding-top: 2rem;
       border-top: 1px solid var(--grey-700);
     }
+
+    &:hover {
+      h1 {
+        color: var(--highlight);
+      }
+    }
   }
 }
 
 .morePosts {
+  background: var(--background);
   display: block;
   color: var(--highlight);
   margin-top: 4rem;
